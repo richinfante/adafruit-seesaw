@@ -1,6 +1,6 @@
 [package]
 name = "adafruit-seesaw"
-version = "0.12.1"
+version = "0.12.2"
 authors = ["Alex Eden <alexandereden91@gmail.com>"]
 edition = "2021"
 description = "Platform-agnostic implementation for communicating with devices that run the Seesaw firmware."
@@ -24,6 +24,7 @@ default = [
     "device_neoslider",
     "device_neotrellis",
     "device_rotary_encoder",
+    "device_ano_rotary",
 
     "module_adc",
     "module_encoder",
@@ -38,6 +39,7 @@ nightly = [
     "device_neoslider",
     "device_neotrellis",
     "device_rotary_encoder",
+    "device_ano_rotary",
 
     "module_keypad",
     "module_neopixel",
@@ -50,6 +52,7 @@ device_neorotary4 = ["module_gpio", "module_encoder"]
 device_neoslider = ["module_adc", "module_gpio"]
 device_neotrellis = ["module_keypad"]
 device_rotary_encoder = ["module_encoder", "module_gpio"]
+device_ano_rotary = ["module_encoder", "module_gpio"]
 
 module_adc = []
 module_encoder = ["module_gpio"]
